@@ -1,0 +1,9 @@
+def duplicate_items(list_numbers):
+    repeat = []
+    for i in list_numbers:
+        if(list_numbers.index(i)!= list_numbers[::-1].index(i) and i not in repeat is True):
+            repeat.append(i)
+
+    return repeat.sort()
+
+print(duplicate_items([1,2,3,4,5,2,3]))
