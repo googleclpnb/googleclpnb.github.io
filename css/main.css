@@ -332,6 +332,47 @@ ul li {
 	filter:brightness(100%);
 }
 /* ------------------------------------------------------------------------------
+	 About Us Banner
+-------------------------------------------------------------------------------*/
+.aboutusbanner {
+	background-image: url(../images/aboutus.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+	
+}
+
+.aboutusbanner-btn {
+	opacity: 0.5;
+}
+.aboutusbanner-text {
+	padding-top: 10%;
+
+}
+.aboutusbanner-text h1 {
+	color: #fff;
+	font-family: "Source Sans Pro";
+	font-size: 53px;
+	letter-spacing: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.aboutusbanner-text p {
+	color: #8d8d8d;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	filter:brightness(100%);
+}
+/* ------------------------------------------------------------------------------
 	 Intro
 -------------------------------------------------------------------------------*/
 .intro {
