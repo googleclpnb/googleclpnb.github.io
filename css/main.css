@@ -2,9 +2,9 @@
 	Template Name: Flosix
 	Author: Designstub
 	Author URI: http://www.designstub.com
-	
-	
-	
+
+
+
 /* ------------------------------------------------------------------------------
 	Typography
 -------------------------------------------------------------------------------*/
@@ -107,23 +107,25 @@ ul li {
 }
 #header .header-content {
 	margin: 0 auto;
-	max-width: 1170px;
-	padding: 60px 0;
+	max-width: 1100px;
+	padding: 50px 0;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
+	min-height: 100px;
 }
 #header .logo {
 	float: left;
+	margin-top: -15px;
 }
 #header.fixed {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: #78AB46;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
-	padding: 25px 0;
+	padding: 35px 0px 0px;
 }
 #header.fixed .nav-toggle {
 	top: 18px;
@@ -289,6 +291,48 @@ ul li {
 	-webkit-transform: translateY(0) rotate(-45deg);
 	transform: translateY(0) rotate(-45deg);
 }
+
+.arrow_down {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.arrow-down::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: -100%;
+	left: 0;
+	border-right: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	-webkit-animation: 3s arrow infinite ease;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	animation: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+	0%, 100% {
+		top: 50px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+@keyframes arrow {
+	0%, 100% {
+		top: 50px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
 /* ------------------------------------------------------------------------------
 	 Banner
 -------------------------------------------------------------------------------*/
@@ -368,6 +412,11 @@ ul li {
 	color: #e84545;
 	font-size: 36px;
 	padding-left: 15px;
+}
+#sTitle {
+	text-align: center;
+	padding-top: 50px;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style";
 }
 /* ------------------------------------------------------------------------------
 	 Works
