@@ -399,10 +399,10 @@ ul li {
 	 Services
 -------------------------------------------------------------------------------*/
 .service-section {
-	padding-top: 100px;
+	padding-top: 0px;
 }
 .services {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .services-content {
 	padding: 0 15px;
@@ -416,7 +416,15 @@ ul li {
 #sTitle {
 	text-align: center;
 	padding-top: 50px;
+	padding-bottom: 20px;
 	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style";
+}
+#sText{
+	text-align: center;
+	display: block;
+	margin-left: 22.5%;
+	margin-right: 22.5%;
+	padding-bottom: 60px;
 }
 /* ------------------------------------------------------------------------------
 	 Works
@@ -574,6 +582,10 @@ ul li {
 /* ------------------------------------------------------------------------------
 	Quote
 -------------------------------------------------------------------------------*/
+.contact {
+	display: none;
+}
+
 .quote h3 {
 	margin-top: 0;
 }
